@@ -12,5 +12,6 @@ class Author
   def add_book(title, publication_date)
     book = Book.new({author_first_name: @first_name, author_last_name: @last_name, title: title, publication_date: publication_date})
     @books.push(book)
+    book
   end
 end
